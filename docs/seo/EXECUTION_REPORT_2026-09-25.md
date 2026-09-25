@@ -9,6 +9,8 @@ The website has moved from a one-page SEO footprint to an eight-URL, internally 
 
 All eight indexable routes passed the local SEO validator and Lighthouse. Final Lighthouse results were 91–99 for performance and 100 for accessibility, best practices and SEO.
 
+The foundation is live in production through commits `c533069` and `a6de547`. Public verification confirmed the expected 200/301/404 behavior, asset caching and security headers. Both GitHub Actions runs completed successfully.
+
 ## Baseline before publication
 
 ### Google Search Console — previous three months
@@ -117,15 +119,15 @@ Reasonable signal range: 1,500–5,000 impressions and 35–140 organic clicks i
 
 ## Immediate next steps
 
-1. Publish the tested branch and verify every production response/header.
-2. Ask Google to reread the existing sitemap and validate resolved coverage issues.
-3. Confirm the real-world business name before changing the GBP name.
-4. Confirm the genuine service radius/base city before replacing the overly broad `Utah` area.
-5. Publish the prepared reply to Leo’s review after action-time approval.
-6. Upload recent real job photos, not generic synthetic before/after scenes.
-7. Choose or create the correct GA4/GTM property and track form submits, calls and SMS.
-8. Reconcile name, phone, URL and description on YellowPages, iHeartSLC, Thumbtack, Facebook and Instagram.
-9. Create one evidence-rich commercial case study and one residential/move case study.
+1. Ask Google to reread the existing sitemap and validate resolved coverage issues after action-time approval.
+2. Confirm the real-world business name before changing the GBP name.
+3. Confirm the genuine service radius/base city before replacing the overly broad `Utah` area.
+4. Publish the prepared reply to Leo’s review after action-time approval.
+5. Upload recent real job photos, not generic synthetic before/after scenes.
+6. Choose or create the correct GA4/GTM property and track form submits, calls and SMS.
+7. Reconcile name, phone, URL and description on YellowPages, iHeartSLC, Thumbtack, Facebook and Instagram.
+8. Create one evidence-rich commercial case study and one residential/move case study.
+9. Correct the stale `www` DNS record and verify the wildcard record after dependency checks.
 10. Review Search Console and GBP metrics every three days; change content only when evidence supports it.
 
 ## Items that still require owner validation
