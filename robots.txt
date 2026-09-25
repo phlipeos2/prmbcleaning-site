@@ -1,4 +1,33 @@
 User-agent: *
 Allow: /
 
+# Search and answer engines explicitly supported by PRMB Cleaning.
+# Named groups document intent; the wildcard rule above remains the fallback.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
 Sitemap: https://prmbcleaning.com/sitemap.xml

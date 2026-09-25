@@ -1,0 +1,15 @@
+{
+  "name": "prmbcleaning-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website and SEO quality gates for PRMB Cleaning",
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "validate": "node scripts/validate-seo.mjs",
+    "audit": "node scripts/run-lighthouse.mjs",
+    "test": "npm run validate && npm run audit"
+  },
+  "devDependencies": {
+    "lighthouse": "13.5.0"
+  }
+}

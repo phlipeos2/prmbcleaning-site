@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>PRMB Cleaning | 5-Star House &amp; Commercial Cleaning in Utah</title>
-  <meta name="description" content="5.0★ rated cleaning company serving all of Utah — Salt Lake City, Provo, Ogden &amp; more. Residential, commercial, deep, move-out &amp; post-construction cleaning. Free quotes, 7 days a week.">
+  <meta name="description" content="5.0★ rated Utah cleaning company serving Salt Lake City, Provo, Ogden and nearby communities. House, commercial, deep, move-out and post-construction cleaning.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://prmbcleaning.com/">
 
   <!-- Favicon temporário (ciano da marca) — trocar por favicon derivado da logo real assim que assets/logo.png for adicionado -->
@@ -14,14 +15,14 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="PRMB Cleaning">
   <meta property="og:title" content="PRMB Cleaning | 5-Star House & Commercial Cleaning in Utah">
-  <meta property="og:description" content="5.0★ rated cleaning company serving all of Utah. Residential, commercial, deep, move-out & post-construction cleaning. Free quotes, 7 days a week.">
+  <meta property="og:description" content="5.0★ rated Utah cleaning company for homes, offices, deep cleans, moves and post-construction projects.">
   <meta property="og:image" content="https://prmbcleaning.com/assets/og-image.jpg">
   <meta property="og:url" content="https://prmbcleaning.com/">
   <meta property="og:locale" content="en_US">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="PRMB Cleaning | 5-Star House & Commercial Cleaning in Utah">
-  <meta name="twitter:description" content="5.0★ rated cleaning company serving all of Utah. Residential, commercial, deep, move-out & post-construction cleaning. Free quotes, 7 days a week.">
+  <meta name="twitter:description" content="5.0★ rated Utah cleaning company for homes, offices, deep cleans, moves and post-construction projects.">
   <meta name="twitter:image" content="https://prmbcleaning.com/assets/og-image.jpg">
 
   <!-- JSON-LD — LocalBusiness (Service-Area Business: sem endereço público por design, ver seo-schema) -->
@@ -29,12 +30,26 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://prmbcleaning.com/#business",
     "name": "PRMB Cleaning",
     "url": "https://prmbcleaning.com/",
     "telephone": "+13853149098",
     "email": "prmbcleaning@gmail.com",
     "image": "https://prmbcleaning.com/assets/logo.png",
-    "openingHours": "Mo-Su 08:00-21:30",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "07:00",
+        "closes": "14:00"
+      }
+    ],
     "areaServed": [
       { "@type": "City", "name": "Salt Lake City, UT" },
       { "@type": "City", "name": "Provo, UT" },
@@ -56,13 +71,31 @@
       { "@type": "City", "name": "West Valley City, UT" }
     ],
     "sameAs": [
-      "https://www.google.com/maps/place/PRMB+Cleaning+-+House+Cleaning+and+Commercial+Cleaning/@39.4996795,-111.5472285,7z/data=!3m1!4b1!4m6!3m5!1s0x41604f5765dc702b:0x64365aeac52f8aa2!8m2!3d39.4996794!4d-111.5472285!16s%2Fg%2F11wnf5v66s"
+      "https://www.google.com/maps/place/?q=place_id:ChIJK3DcZVdPYEEReqjFqlY2ZGI",
+      "https://www.instagram.com/prmbcleaning/",
+      "https://www.facebook.com/profile.php?id=61562797934965"
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "9"
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Cleaning services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "House Cleaning", "url": "https://prmbcleaning.com/services/house-cleaning" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Cleaning", "url": "https://prmbcleaning.com/services/commercial-cleaning" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deep Cleaning", "url": "https://prmbcleaning.com/services/deep-cleaning" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Move-In and Move-Out Cleaning", "url": "https://prmbcleaning.com/services/move-in-move-out-cleaning" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Post-Construction Cleaning", "url": "https://prmbcleaning.com/services/post-construction-cleaning" } }
+      ]
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://prmbcleaning.com/#website",
+    "name": "PRMB Cleaning",
+    "url": "https://prmbcleaning.com/",
+    "publisher": { "@id": "https://prmbcleaning.com/#business" }
   }
   </script>
 
@@ -119,6 +152,7 @@
       font-family: var(--font);
       color: var(--color-ink);
       background: var(--color-canvas);
+      overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
     img { max-width: 100%; display: block; }
@@ -421,10 +455,10 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow" data-aos="fade-down"><svg class="icon" aria-hidden="true"><use href="#icon-sparkles"/></svg> Serving all of Utah — 7 days a week</span>
+          <span class="eyebrow" data-aos="fade-down"><svg class="icon" aria-hidden="true"><use href="#icon-sparkles"/></svg> Serving Utah communities Monday–Saturday</span>
           <h1 data-aos="fade-up" data-aos-delay="100">Spotless homes and offices, <em>backed by real 5-star reviews</em></h1>
           <p class="lead" data-aos="fade-up" data-aos-delay="150">
-            PRMB Cleaning delivers thorough, reliable residential and commercial cleaning across Utah —
+            PRMB Cleaning delivers thorough, reliable residential and commercial cleaning in listed Utah communities —
             from Salt Lake City to Provo and beyond. Licensed, insured, and rated 5.0★ by real customers on Google.
           </p>
           <div class="hero-actions" data-aos="fade-up" data-aos-delay="200">
@@ -460,22 +494,22 @@
         <div class="services-grid">
           <div class="service-card" data-aos="fade-up" data-aos-delay="0">
             <div class="service-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#icon-home"/></svg></div>
-            <h3>Residential Cleaning</h3>
+            <h3><a href="/services/house-cleaning">Residential Cleaning</a></h3>
             <p>Regular housekeeping and deep cleaning for your home, on a schedule that works for you.</p>
           </div>
           <div class="service-card" data-aos="fade-up" data-aos-delay="50">
             <div class="service-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#icon-building-2"/></svg></div>
-            <h3>Commercial Cleaning</h3>
+            <h3><a href="/services/commercial-cleaning">Commercial Cleaning</a></h3>
             <p>Office, medical, retail and restaurant cleaning that fits your business hours and budget.</p>
           </div>
           <div class="service-card" data-aos="fade-up" data-aos-delay="100">
             <div class="service-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#icon-sparkles"/></svg></div>
-            <h3>Deep Cleaning</h3>
+            <h3><a href="/services/deep-cleaning">Deep Cleaning</a></h3>
             <p>Thorough top-to-bottom cleaning that reaches every corner — grout, appliances, baseboards.</p>
           </div>
           <div class="service-card" data-aos="fade-up" data-aos-delay="150">
             <div class="service-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#icon-door-open"/></svg></div>
-            <h3>Move In/Out Cleaning</h3>
+            <h3><a href="/services/move-in-move-out-cleaning">Move In/Out Cleaning</a></h3>
             <p>Get your deposit back or start fresh in your new home with a spotless, landlord-ready clean.</p>
           </div>
           <div class="service-card" data-aos="fade-up" data-aos-delay="200">
@@ -490,7 +524,7 @@
           </div>
           <div class="service-card" data-aos="fade-up" data-aos-delay="300">
             <div class="service-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#icon-hard-hat"/></svg></div>
-            <h3>Post-Construction Cleaning</h3>
+            <h3><a href="/services/post-construction-cleaning">Post-Construction Cleaning</a></h3>
             <p>Dust, debris and residue removal so your newly built or renovated space is move-in ready.</p>
           </div>
           <div class="service-card" data-aos="fade-up" data-aos-delay="350">
@@ -574,10 +608,10 @@
           </div>
           <div class="stat" data-aos="zoom-in" data-aos-delay="200">
             <div class="num">18</div>
-            <div class="label">Utah cities served</div>
+            <div class="label">Utah communities listed</div>
           </div>
           <div class="stat" data-aos="zoom-in" data-aos-delay="300">
-            <div class="num">7</div>
+            <div class="num">6</div>
             <div class="label">Days a week open</div>
           </div>
         </div>
@@ -651,8 +685,8 @@
       <div class="container">
         <div class="section-head" data-aos="fade-up">
           <span class="eyebrow">Where we clean</span>
-          <h2 style="margin-top:var(--space-md);">Proudly serving all of Utah</h2>
-          <p>From Salt Lake City to Provo and beyond — if you're in one of these cities, we've got you covered.</p>
+          <h2 style="margin-top:var(--space-md);">Serving communities across Utah</h2>
+          <p>From Salt Lake City to Provo and beyond — request a quote to confirm availability for your address.</p>
         </div>
         <div class="area-chips" data-aos="fade-up" data-aos-delay="100">
           <span class="area-chip">Salt Lake City</span>
@@ -684,7 +718,32 @@
           <span class="eyebrow">Questions</span>
           <h2 style="margin-top:var(--space-md);">Frequently asked questions</h2>
         </div>
-        <div class="faq-list" id="faqList"></div>
+        <div class="faq-list" id="faqList">
+          <div class="faq-item">
+            <button class="faq-q" id="faq-btn-0" aria-expanded="false" aria-controls="faq-ans-0">Do you bring your own cleaning supplies?<span class="faq-icon">+</span></button>
+            <div class="faq-a" id="faq-ans-0" role="region" aria-labelledby="faq-btn-0"><p>Yes. We bring the cleaning products and equipment needed for the agreed scope. If you prefer a specific product, tell us while requesting your quote.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" id="faq-btn-1" aria-expanded="false" aria-controls="faq-ans-1">Are you licensed and insured?<span class="faq-icon">+</span></button>
+            <div class="faq-a" id="faq-ans-1" role="region" aria-labelledby="faq-btn-1"><p>Yes. PRMB Cleaning is licensed and insured for residential and commercial cleaning work.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" id="faq-btn-2" aria-expanded="false" aria-controls="faq-ans-2">Do you serve my city?<span class="faq-icon">+</span></button>
+            <div class="faq-a" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2"><p>We list Salt Lake City, Provo, Ogden, Park City, Lehi, Sandy, Draper and other Utah communities in our service area. Contact us with your address so we can confirm availability.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" id="faq-btn-3" aria-expanded="false" aria-controls="faq-ans-3">How do I get a quote?<span class="faq-icon">+</span></button>
+            <div class="faq-a" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3"><p>Use the form below or call or text (385) 314-9098. Share the type and size of the property, the cleaning needed, your location and preferred timing for a more accurate quote.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" id="faq-btn-4" aria-expanded="false" aria-controls="faq-ans-4">Do you offer recurring cleaning?<span class="faq-icon">+</span></button>
+            <div class="faq-a" id="faq-ans-4" role="region" aria-labelledby="faq-btn-4"><p>Yes. Recurring cleaning is available for homes and businesses. Frequency and scope are confirmed in your quote.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" id="faq-btn-5" aria-expanded="false" aria-controls="faq-ans-5">What affects the price of a cleaning?<span class="faq-icon">+</span></button>
+            <div class="faq-a" id="faq-ans-5" role="region" aria-labelledby="faq-btn-5"><p>Pricing depends on the property size, current condition, requested scope, location, access and timing. We quote each project individually so you know what is included before work begins.</p></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -706,11 +765,11 @@
             </div>
             <div class="contact-row">
               <div class="icon-badge"><svg class="icon icon-lg" aria-hidden="true"><use href="#icon-clock"/></svg></div>
-              <div><strong>7 days a week</strong><div class="sub">8:00 AM – 9:30 PM</div></div>
+              <div><strong>Monday–Saturday</strong><div class="sub">Mon–Fri 7:00 AM–9:00 PM · Sat 7:00 AM–2:00 PM</div></div>
             </div>
             <div class="contact-row">
               <div class="icon-badge"><svg class="icon icon-lg" aria-hidden="true"><use href="#icon-map-pin"/></svg></div>
-              <div><strong>Serving all of Utah</strong><div class="sub">Salt Lake City, Provo, Ogden &amp; 15+ more cities</div></div>
+              <div><strong>Utah service-area business</strong><div class="sub">Salt Lake City, Provo, Ogden &amp; nearby communities</div></div>
             </div>
           </div>
         </div>
@@ -759,7 +818,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send Request</button>
-            <p class="form-note">By submitting, you agree to be contacted about your quote. See our <a href="privacy-policy.html" style="color:var(--color-positive-deep);">Privacy Policy</a>.</p>
+            <p class="form-note">By submitting, you agree to be contacted about your quote. See our <a href="/privacy-policy" style="color:var(--color-positive-deep);">Privacy Policy</a>.</p>
           </form>
         </div>
       </div>
@@ -787,15 +846,15 @@
             <img src="assets/logo.png" alt="PRMB Cleaning logo" width="32" height="32" onerror="this.style.display='none'">
             PRMB Cleaning
           </a>
-          <p>Professional residential &amp; commercial cleaning across Utah. 5.0★ rated, licensed and insured.</p>
+          <p>Professional residential &amp; commercial cleaning in listed Utah communities. 5.0★ rated, licensed and insured.</p>
         </div>
         <div>
           <h3>Services</h3>
           <ul>
-            <li><a href="#services">Residential</a></li>
-            <li><a href="#services">Commercial</a></li>
-            <li><a href="#services">Deep Cleaning</a></li>
-            <li><a href="#services">Move In/Out</a></li>
+            <li><a href="/services/house-cleaning">Residential</a></li>
+            <li><a href="/services/commercial-cleaning">Commercial</a></li>
+            <li><a href="/services/deep-cleaning">Deep Cleaning</a></li>
+            <li><a href="/services/move-in-move-out-cleaning">Move In/Out</a></li>
           </ul>
         </div>
         <div>
@@ -804,7 +863,8 @@
             <li><a href="#about">About Us</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/service-areas">Service Areas</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
           </ul>
         </div>
         <div>
@@ -866,34 +926,13 @@
       navToggle.setAttribute('aria-expanded', 'false');
     }));
 
-    // FAQ accordion
-    const faqs = [
-      { q: "Do you bring your own cleaning supplies?", a: "Yes — we bring all necessary eco-friendly cleaning products and equipment. If you have specific products you'd like us to use, just let us know when you book." },
-      { q: "Are you licensed and insured?", a: "Yes, PRMB Cleaning is fully licensed and insured for both residential and commercial jobs, so you're covered from start to finish." },
-      { q: "Do you serve my city?", a: "We serve all of Utah, including Salt Lake City, Provo, Ogden, Park City, Lehi, Sandy, Draper, West Jordan, South Jordan, Orem, American Fork, Riverton, Herriman, Taylorsville, Murray, Bountiful, Layton and West Valley City. If you don't see your city, reach out — we likely still cover it." },
-      { q: "How do I get a quote?", a: "Fill out the form below or call us at (385) 314-9098. We reply to every request within 24 hours with a free, no-obligation quote." },
-      { q: "Do you offer recurring cleaning?", a: "Yes — weekly, biweekly and monthly recurring plans are available for both homes and businesses, on top of one-time deep cleans and move-in/move-out cleaning." },
-      { q: "What if I'm not satisfied with the cleaning?", a: "We offer a satisfaction guarantee — if something isn't right, tell us within 24 hours and we'll come back and make it right at no extra charge." }
-    ];
-    const faqList = document.getElementById('faqList');
-    faqs.forEach((item, i) => {
-      const el = document.createElement('div');
-      el.className = 'faq-item';
-      el.innerHTML = `
-        <button class="faq-q" id="faq-btn-${i}" aria-expanded="false" aria-controls="faq-ans-${i}">
-          ${item.q}
-          <span class="faq-icon" id="faq-icon-${i}">+</span>
-        </button>
-        <div class="faq-a" id="faq-ans-${i}" role="region" aria-labelledby="faq-btn-${i}">
-          <p>${item.a}</p>
-        </div>`;
-      faqList.appendChild(el);
-      el.querySelector('.faq-q').addEventListener('click', () => toggleFaq(i));
+    // FAQ content stays in HTML so search engines and visitors can read it without JavaScript.
+    document.querySelectorAll('.faq-q').forEach((button) => {
+      button.addEventListener('click', () => toggleFaq(button));
     });
-    function toggleFaq(i) {
-      const btn = document.getElementById('faq-btn-' + i);
-      const ans = document.getElementById('faq-ans-' + i);
-      const icon = document.getElementById('faq-icon-' + i);
+    function toggleFaq(btn) {
+      const ans = document.getElementById(btn.getAttribute('aria-controls'));
+      const icon = btn.querySelector('.faq-icon');
       const isOpen = btn.getAttribute('aria-expanded') === 'true';
       document.querySelectorAll('.faq-q').forEach(b => b.setAttribute('aria-expanded', 'false'));
       document.querySelectorAll('.faq-a').forEach(a => a.style.maxHeight = '0px');

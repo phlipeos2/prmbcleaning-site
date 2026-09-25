@@ -1,4 +1,9 @@
-# Notas internas do projeto — não fazem parte do site publicado
+# Internal project notes — not part of the published site
 CLAUDE.md
 briefing.md
 DESIGN.md
+
+node_modules/
+.lighthouseci/
+.tmp/
+npm-debug.log*
