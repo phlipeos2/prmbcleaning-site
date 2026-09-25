@@ -1,13 +1,13 @@
 # PRMB Cleaning — Google Business Profile Playbook
 
-Status: prepared, not yet published. Public edits/replies require confirmation immediately before the action.
+Status: execution started September 25, 2026. The review reply and first update are published. Ten service descriptions are visible. The revised profile description and four-city service area are still pending propagation/review.
 
 ## Current profile facts
 
 - Public name: `PRMB Cleaning - House Cleaning and Commercial Cleaning`
 - Primary category displayed: `Cleaning`
 - Model: service-area business; no public address
-- Service area: `Utah, USA`
+- Service area submitted: Salt Lake City, Provo, Ogden and Park City
 - Hours: closed Sunday; Monday–Friday 7:00 AM–9:00 PM; Saturday 7:00 AM–2:00 PM
 - Phone/SMS: `(385) 314-9098`
 - Rating: 5.0 from 9 reviews
@@ -52,7 +52,7 @@ Suggested structure:
 - **Post-construction cleaning:** Fine-dust and surface cleaning after active work and heavy debris removal are complete.
 - **Recurring janitorial service:** Ongoing cleaning based on an agreed checklist, service window and reporting contact.
 
-## Pending review reply
+## Review reply submitted
 
 Reviewer: Leo Areche
 
@@ -60,53 +60,69 @@ Review: “Awesome experience!”
 
 Date: May 6, 2025
 
-Prepared reply:
+Published reply:
 
 > Thank you, Leo! We’re glad you had an awesome experience with PRMB Cleaning. We appreciate your trust and look forward to helping you again.
 
 ## Four-post starter sequence
 
-Use recent, real PRMB photos. Do not present generated imagery as completed customer work.
+The owner approved generated promotional imagery instead of real PRMB photos. Do not present generated imagery as completed customer work, a customer property or a before/after result.
 
-### Post 1 — Recent work
+### Post 1 — Commercial scope — submitted September 25
 
-**Photo:** a real finished kitchen, bathroom or commercial area, with customer permission and no private details.
+**Image:** generated commercial-cleaning editorial illustration; no people, logo or customer claim.
 
-**Copy:** A clean result starts with a clear scope. This recent PRMB Cleaning project focused on the areas the customer cared about most, with details confirmed before the visit. Need help with a home or business in our Utah service area? Request a quote and tell us about the space.
+**Copy:** Commercial spaces deserve a cleaning plan built around how the team actually uses the space. PRMB Cleaning provides office and commercial cleaning across Salt Lake City, Provo, Ogden, and Park City, with checklists tailored to work areas, restrooms, common areas, floors, and high-touch surfaces. Request a free estimate.
 
-**Link:** `https://prmbcleaning.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp_recent_work#contact`
+**Link:** `https://prmbcleaning.com/services/commercial-cleaning`
 
-### Post 2 — Commercial scope
+**Status:** published September 25.
 
-**Photo:** real office/common-area work.
+## Stale-post cleanup requiring confirmation
 
-**Copy:** Commercial cleaning should match how the facility operates. PRMB Cleaning builds the checklist around the space, traffic, preferred service window and frequency—then confirms the scope before scheduling.
+The September 25 audit found older published posts that should be removed because they contain one or more of the following:
 
-**Link:** `https://prmbcleaning.com/services/commercial-cleaning?utm_source=google&utm_medium=organic&utm_campaign=gbp_commercial`
+- old phone number `(801) 793-6251`;
+- “all Utah” or “entire Utah” wording;
+- seven-day / 8:00 AM–9:30 PM availability that conflicts with current hours;
+- unverified eco-friendly, trained-team, hospital-grade or healthcare-compliance claims;
+- an unverified commercial-client quotation;
+- a possibly expired “free deep clean” offer;
+- before/after language without a documented real project.
+
+Two recent posts already show `Rejected`; leave them untouched unless the owner requests deletion. Deleting published posts is destructive and must be confirmed immediately before execution.
+
+### Post 2 — Standard vs. deep cleaning
+
+**Image:** `assets/seo/prmb-house-cleaning-utah-editorial-2026-09.png`
+
+**Copy:** Routine cleaning helps maintain a space on a recurring schedule. Deep cleaning gives extra attention to buildup, baseboards, fixtures, kitchen and bathroom details, and other areas agreed in the estimate. Not sure which service fits your home? Tell PRMB Cleaning about the space and the result you need, and we will help define the scope.
+
+**Link:** `https://prmbcleaning.com/services/deep-cleaning`
 
 ### Post 3 — Moving checklist
 
-**Photo:** a real empty-room or turnover project.
+**Image:** `assets/seo/prmb-move-out-cleaning-utah-editorial-2026-09.png`
 
-**Copy:** Planning a move? The best time for a move clean is usually after belongings and repair work are out of the way. Share the property size, condition, deadline and whether you need appliance or cabinet interiors included.
+**Copy:** Move cleaning is easier to scope when belongings and repair work are out of the way. Before requesting an estimate, note the property size, current condition, deadline, and whether cabinet or appliance interiors need attention. PRMB Cleaning provides move-in and move-out cleaning in Salt Lake City, Provo, Ogden, Park City, and nearby communities.
 
-**Link:** `https://prmbcleaning.com/services/move-in-move-out-cleaning?utm_source=google&utm_medium=organic&utm_campaign=gbp_move_cleaning`
+**Link:** `https://prmbcleaning.com/services/move-in-move-out-cleaning`
 
-### Post 4 — Standard vs deep cleaning
+### Post 4 — Preparing for an estimate
 
-**Photo:** a real detail shot such as grout, baseboard or fixture work.
+**Image:** a future neutral editorial still life showing a checklist and cleaning supplies; no people, brand logos, readable text or customer-property claim.
 
-**Copy:** Routine cleaning supports upkeep. Deep cleaning gives extra attention to buildup and detailed areas named in the quote. Not sure which one fits? Send photos and describe the result you need.
+**Copy:** A useful cleaning estimate starts with a clear picture of the space. Share the property type, approximate size, current condition, priority areas, location, deadline, and whether you need recurring or one-time service. PRMB Cleaning will use those details to define the scope before scheduling.
 
-**Link:** `https://prmbcleaning.com/services/deep-cleaning?utm_source=google&utm_medium=organic&utm_campaign=gbp_deep_cleaning`
+**Link:** `https://prmbcleaning.com/services/`
 
-## Photo checklist
+## Image checklist
 
-- Upload recent work every one to two weeks.
-- Use original, well-lit horizontal and vertical images.
-- Remove customer names, mail, family photos, access codes, license plates and medical/private information.
-- Avoid repeated stock images, text-heavy graphics and fake before/after comparisons.
-- Ask for permission before publishing identifiable private-property interiors.
+- Use generated images as editorial illustrations only.
+- Favor natural lighting, realistic materials and plausible Utah interiors without identifiable landmarks.
+- Avoid people, uniforms, logos, readable text, exaggerated sparkle effects and fake before/after comparisons.
+- Never say or imply that a generated image is a PRMB customer property, team member or completed project.
+- Create enough visual variation that posts do not look like repeated stock templates.
 
 ## Review process
 

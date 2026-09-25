@@ -9,7 +9,24 @@ The website has moved from a one-page SEO footprint to an eight-URL, internally 
 
 All eight indexable routes passed the local SEO validator and Lighthouse. Final Lighthouse results were 91–99 for performance and 100 for accessibility, best practices and SEO.
 
-The foundation is live in production through commits `c533069` and `a6de547`. Public verification confirmed the expected 200/301/404 behavior, asset caching and security headers. Both GitHub Actions runs completed successfully.
+The foundation is live in production. Public verification confirmed the expected 200/301/404 behavior, asset caching and security headers. The final GitHub Actions run passed across all eight routes.
+
+## Operational execution on September 25
+
+- Resubmitted the eight-URL sitemap in Search Console.
+- Started validation for the legacy soft-404 and old 5xx issue groups.
+- Requested priority indexing for the service hub, commercial cleaning, house cleaning and service-area pages.
+- Submitted a factual GBP description and replaced the statewide area with Salt Lake City, Provo, Ogden and Park City; Google review is pending.
+- Rewrote all ten GBP service descriptions to remove unverified claims and clarify scope.
+- Responded to the only unanswered review; the response is published and visible as the owner.
+- Generated three realistic editorial images without people, logos or fake job claims.
+- Published the first commercial-cleaning GBP update with a direct service-page link.
+- Moved `www.prmbcleaning.com` from the stale origin to the Cloudflare Pages project; both apex and `www` are now active with SSL.
+- Prepared a host-level 301 redirect from `www` to the apex. Cloudflare displayed a final DNS warning, so deployment is waiting for a specific owner confirmation.
+- Found older public GBP posts with a wrong phone number, stale hours/coverage and unsupported claims. Their deletion is waiting for a specific owner confirmation.
+- Prepared a prioritized local-authority plan and four-week evidence-first content calendar.
+- Added a defensive AOS initialization guard so a blocked animation CDN cannot create a JavaScript exception or impair page behavior.
+- Final local rerun passed all eight routes: SEO 100, accessibility 100, best practices 96 and performance 92–100. The remaining best-practices deduction is caused by external-resource requests being blocked in the local audit environment, not a site JavaScript error.
 
 ## Baseline before publication
 
@@ -87,7 +104,7 @@ These are directional scenarios, not guarantees. The old site produced only five
 - Google discovers the eight sitemap URLs and begins replacing legacy exclusions.
 - Three to eight pages may be indexed, depending on crawl timing and perceived quality.
 - Commercial/service queries should begin appearing against the new URLs.
-- GBP should have fresh real photos and the pending review answered after approval.
+- GBP should show the approved profile edits, first editorial image/post and review response after Google processing.
 
 Reasonable signal range: 100–400 new Search Console impressions and 3–15 clicks, with high uncertainty.
 
@@ -123,12 +140,12 @@ Reasonable signal range: 1,500–5,000 impressions and 35–140 organic clicks i
 2. Confirm the real-world business name before changing the GBP name.
 3. Confirm the genuine service radius/base city before replacing the overly broad `Utah` area.
 4. Publish the prepared reply to Leo’s review after action-time approval.
-5. Upload recent real job photos, not generic synthetic before/after scenes.
+5. Use the approved generated images only as editorial illustrations; never as completed PRMB work or before/after evidence.
 6. Choose or create the correct GA4/GTM property and track form submits, calls and SMS.
 7. Reconcile name, phone, URL and description on YellowPages, iHeartSLC, Thumbtack, Facebook and Instagram.
-8. Create one evidence-rich commercial case study and one residential/move case study.
-9. Correct the stale `www` DNS record and verify the wildcard record after dependency checks.
-10. Review Search Console and GBP metrics every three days; change content only when evidence supports it.
+8. Claim Apple/Bing/Yelp/Nextdoor one at a time after the owning account and private verification details are confirmed.
+9. Create the first evidence-rich case study when a real project record and client permission are available.
+10. Deploy and verify the prepared `www` 301 after confirming the Cloudflare warning; review Search Console/GBP metrics every three days.
 
 ## Items that still require owner validation
 
@@ -137,4 +154,14 @@ Reasonable signal range: 1,500–5,000 impressions and 35–140 organic clicks i
 - services and claims that can be proven operationally;
 - licensing, insurance, eco-friendly and satisfaction-guarantee wording;
 - GA4/GTM account ownership;
-- permission at action time for public GBP replies, edits and posts.
+- owning accounts and private verification details for third-party citation profiles;
+- permission and source material for any real-project case study.
+
+## Supporting deliverables
+
+- `docs/seo/LOCAL_AUTHORITY_PLAN_2026-09-25.md`
+- `docs/seo/CONTENT_CALENDAR_2026-10.md`
+- `docs/seo/GBP_PLAYBOOK.md`
+- `assets/seo/prmb-commercial-cleaning-utah-editorial-2026-09.png`
+- `assets/seo/prmb-house-cleaning-utah-editorial-2026-09.png`
+- `assets/seo/prmb-move-out-cleaning-utah-editorial-2026-09.png`
