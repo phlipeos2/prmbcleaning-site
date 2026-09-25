@@ -100,6 +100,12 @@ for (const legacy of ['/privacy-policy.html', '/privacy-policy/', '/about/']) {
   if (!redirects.includes(legacy)) errors.push(`_redirects missing legacy route ${legacy}`);
 }
 
+const headers = read('_headers');
+if ((headers.match(/^\/\*$/gm) ?? []).length !== 1) errors.push('_headers must contain exactly one global /* rule');
+for (const header of ['Strict-Transport-Security', 'X-Frame-Options', 'Permissions-Policy', 'Cache-Control']) {
+  if (!headers.includes(header)) errors.push(`_headers missing ${header}`);
+}
+
 if (warnings.length) console.warn(`Warnings:\n- ${warnings.join('\n- ')}`);
 if (errors.length) {
   console.error(`SEO validation failed (${errors.length}):\n- ${errors.join('\n- ')}`);
