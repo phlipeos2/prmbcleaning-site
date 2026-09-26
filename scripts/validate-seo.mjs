@@ -65,6 +65,8 @@ for (const [route, file] of routeMap) {
   if (h1Count !== 1) errors.push(`${file}: expected 1 H1, found ${h1Count}`);
   if (route !== '/privacy-policy' && robots.includes('noindex')) errors.push(`${file}: indexable page contains noindex`);
   if (route !== '/privacy-policy' && canonical !== `https://prmbcleaning.com${route}`) errors.push(`${file}: canonical mismatch (${canonical})`);
+  if (!html.includes('tel:+13853149098')) errors.push(`${file}: canonical PRMB phone link is missing`);
+  if (html.includes('(801) 793-6251')) errors.push(`${file}: legacy phone number must not be reused`);
 
   if (titles.has(title)) errors.push(`${file}: duplicate title also used by ${titles.get(title)}`);
   else titles.set(title, file);
@@ -99,6 +101,10 @@ const redirects = read('_redirects');
 for (const legacy of ['/privacy-policy.html', '/privacy-policy/', '/about/']) {
   if (!redirects.includes(legacy)) errors.push(`_redirects missing legacy route ${legacy}`);
 }
+
+const llms = read('llms.txt');
+if (!llms.includes('+1-385-314-9098')) errors.push('llms.txt is missing the canonical PRMB phone number');
+if (llms.includes('(801) 793-6251')) errors.push('llms.txt contains the legacy phone number');
 
 const headers = read('_headers');
 if ((headers.match(/^\/\*$/gm) ?? []).length !== 1) errors.push('_headers must contain exactly one global /* rule');

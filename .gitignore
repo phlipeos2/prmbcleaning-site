@@ -6,4 +6,6 @@ DESIGN.md
 node_modules/
 .lighthouseci/
 .tmp/
+playwright-report/
+test-results/
 npm-debug.log*

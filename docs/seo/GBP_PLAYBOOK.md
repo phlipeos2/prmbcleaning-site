@@ -80,9 +80,9 @@ The owner approved generated promotional imagery instead of real PRMB photos. Do
 
 ## Stale-post cleanup requiring confirmation
 
-The September 25 audit found older published posts that should be removed because they contain one or more of the following:
+The September 25 audit found older published posts that must not be reused as templates because they contain one or more of the following:
 
-- old phone number `(801) 793-6251`;
+- a legacy phone number that the owner has replaced with the canonical `+1 385-314-9098`;
 - “all Utah” or “entire Utah” wording;
 - seven-day / 8:00 AM–9:30 PM availability that conflicts with current hours;
 - unverified eco-friendly, trained-team, hospital-grade or healthcare-compliance claims;
@@ -90,7 +90,7 @@ The September 25 audit found older published posts that should be removed becaus
 - a possibly expired “free deep clean” offer;
 - before/after language without a documented real project.
 
-Two recent posts already show `Rejected`; leave them untouched unless the owner requests deletion. Deleting published posts is destructive and must be confirmed immediately before execution.
+The owner explicitly decided to preserve every legacy post, including the two rejected items and older published items. Do not delete them. All new content must use `+1 385-314-9098` and avoid unsupported claims.
 
 ### Post 2 — Standard vs. deep cleaning
 

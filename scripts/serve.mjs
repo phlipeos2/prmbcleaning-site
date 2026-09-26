@@ -37,6 +37,13 @@ const resolveRequest = (requestPath) => {
 };
 
 const server = createServer((request, response) => {
+  if (process.env.PRMB_TEST_SERVER === '1' && request.method === 'POST' && request.url === '/__shutdown') {
+    response.writeHead(204, { 'Cache-Control': 'no-store' });
+    response.end();
+    setImmediate(close);
+    return;
+  }
+
   const file = resolveRequest(request.url || '/');
   const status = file ? 200 : 404;
   const target = file ?? resolve(root, '404.html');
@@ -53,6 +60,10 @@ server.listen(port, host, () => {
   console.log(`READY http://${host}:${port}`);
 });
 
-const close = () => server.close(() => process.exit(0));
+const close = () => {
+  server.closeAllConnections?.();
+  server.close(() => process.exit(0));
+  setTimeout(() => process.exit(0), 1000).unref();
+};
 process.on('SIGINT', close);
 process.on('SIGTERM', close);

@@ -7,9 +7,11 @@
     "serve": "node scripts/serve.mjs",
     "validate": "node scripts/validate-seo.mjs",
     "audit": "node scripts/run-lighthouse.mjs",
-    "test": "npm run validate && npm run audit"
+    "test:e2e": "playwright test",
+    "test": "npm run validate && npm run audit && npm run test:e2e"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "lighthouse": "13.5.0"
   }
 }
