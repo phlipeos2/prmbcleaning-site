@@ -28,7 +28,7 @@ const targetFileForPath = (pathname) => {
   return `${pathname.slice(1)}.html`;
 };
 
-for (const required of ['404.html', '_headers', '_redirects', 'robots.txt', 'sitemap.xml', 'llms.txt', 'assets/seo-pages.css', 'assets/analytics.js']) {
+for (const required of ['404.html', '_headers', '_redirects', 'robots.txt', 'sitemap.xml', 'llms.txt', 'assets/seo-pages.css', 'assets/site-events.js']) {
   if (!existsSync(resolve(root, required))) errors.push(`Missing required file: ${required}`);
 }
 
@@ -67,7 +67,7 @@ for (const [route, file] of routeMap) {
   if (route !== '/privacy-policy' && canonical !== `https://prmbcleaning.com${route}`) errors.push(`${file}: canonical mismatch (${canonical})`);
   if (!html.includes('tel:+13853149098')) errors.push(`${file}: canonical PRMB phone link is missing`);
   if (html.includes('(801) 793-6251')) errors.push(`${file}: legacy phone number must not be reused`);
-  if (!html.includes('/assets/analytics.js')) errors.push(`${file}: Google Analytics loader is missing`);
+  if (!html.includes('/assets/site-events.js')) errors.push(`${file}: Google Analytics loader is missing`);
 
   if (titles.has(title)) errors.push(`${file}: duplicate title also used by ${titles.get(title)}`);
   else titles.set(title, file);
@@ -92,11 +92,11 @@ for (const [route, file] of routeMap) {
 const page404 = read('404.html');
 if (!/name=["']robots["'][^>]+noindex/i.test(page404)) errors.push('404.html must be noindex');
 if ((page404.match(/<h1(?:\s|>)/gi) ?? []).length !== 1) errors.push('404.html must contain exactly one H1');
-if (!page404.includes('/assets/analytics.js')) errors.push('404.html: Google Analytics loader is missing');
+if (!page404.includes('/assets/site-events.js')) errors.push('404.html: Google Analytics loader is missing');
 
-const analytics = read('assets/analytics.js');
+const analytics = read('assets/site-events.js');
 for (const token of ['G-QRXZ5P920F', 'generate_lead', 'click_to_call', 'click_to_text', 'click_to_email']) {
-  if (!analytics.includes(token)) errors.push(`assets/analytics.js missing ${token}`);
+  if (!analytics.includes(token)) errors.push(`assets/site-events.js missing ${token}`);
 }
 
 const robots = read('robots.txt');
