@@ -1,6 +1,6 @@
 # PRMB Cleaning
 
-> PRMB Cleaning is a service-area cleaning company serving homes and businesses in Salt Lake City, Provo, Ogden, Park City, and nearby Utah communities. The company provides residential, commercial, deep, move-in/move-out, post-construction, window, event, garage, and recurring janitorial cleaning. Call or text (385) 314-9098 for a free quote.
+> PRMB Cleaning is a service-area cleaning company serving homes and businesses in Salt Lake City, Provo, Ogden, Park City, and nearby Utah communities. Its core pages cover house, commercial, deep, move-in/move-out, and post-construction cleaning. Call or text (385) 314-9098 to request a quote.
 
 This file is a concise discovery guide for language-model tools. The canonical source for every claim is the linked HTML page. Availability, scope, and pricing are confirmed during the quote process.
 
@@ -24,7 +24,7 @@ This file is a concise discovery guide for language-model tools. The canonical s
 - Phone and SMS: +1-385-314-9098
 - Email: prmbcleaning@gmail.com
 - Website: https://prmbcleaning.com/
-- Google rating displayed on the website: 5.0 from 9 reviews
+- Google rating observed on September 27, 2026: 5.0 from 9 reviews
 - Public-service model: service-area business; no customer-facing address is published
 
 ## Contact

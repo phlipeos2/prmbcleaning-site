@@ -1,6 +1,6 @@
 # PRMB Cleaning — Google Business Profile Playbook
 
-Status: execution started September 25, 2026. The review reply and first update are published. Ten service descriptions are visible. The revised profile description and four-city service area are still pending propagation/review.
+Status: updated September 27, 2026. The review reply and the first two editorial updates are published. All nine reviews are answered. Ten service descriptions are visible. The revised factual profile description remains pending; Google states that review may take up to seven days.
 
 ## Current profile facts
 
@@ -100,6 +100,8 @@ The owner explicitly decided to preserve every legacy post, including the two re
 
 **Link:** `https://prmbcleaning.com/services/deep-cleaning`
 
+**Status:** published and publicly visible September 27.
+
 ### Post 3 — Moving checklist
 
 **Image:** `assets/seo/prmb-move-out-cleaning-utah-editorial-2026-09.png`
@@ -131,3 +133,11 @@ The owner explicitly decided to preserve every legacy post, including the two re
 - Never offer incentives for reviews or filter customers by expected rating.
 - Ask customers for honest feedback using Google’s official review link after a completed job.
 - Track review count, response rate, recurring themes and new photos monthly.
+
+## Link and post rules from September 27 onward
+
+- Prefer an official action button and a tracked landing-page link instead of writing the phone number in the post body; Google warns that contact information in post copy may be rejected.
+- Website profile URL after action-time approval: `https://prmbcleaning.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp`.
+- Service-post pattern: `https://prmbcleaning.com/services/{service}?utm_source=google&utm_medium=organic&utm_campaign=gbp_posts&utm_content={yyyy-mm-topic}`.
+- Keep canonical tags free of UTM parameters.
+- Record every post date, topic, target URL, `utm_content`, image, status and observed clicks in the 15-day audit.

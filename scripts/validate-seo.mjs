@@ -21,6 +21,19 @@ const indexableRoutes = [...routeMap.keys()].filter((route) => route !== '/priva
 const read = (file) => readFileSync(resolve(root, file), 'utf8');
 const match = (html, pattern) => html.match(pattern)?.[1]?.trim() ?? '';
 const stripTags = (value) => value.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+const unsupportedClaimPatterns = [
+  /licensed\s*(?:&|and)\s*insured/i,
+  /eco[- ]friendly/i,
+  /satisfaction guaranteed/i,
+  /no extra charge/i,
+  /within 24 hours/i,
+  /immediate assistance/i,
+  /medical\s*(?:\/|and)\s*dental/i,
+  /restaurant cleaning/i,
+  /window cleaning/i,
+  /post-event cleaning/i,
+  /garage cleaning/i
+];
 const targetFileForPath = (pathname) => {
   if (routeMap.has(pathname)) return routeMap.get(pathname);
   if (/\.[a-z0-9]+$/i.test(pathname)) return pathname.slice(1);
@@ -68,6 +81,9 @@ for (const [route, file] of routeMap) {
   if (!html.includes('tel:+13853149098')) errors.push(`${file}: canonical PRMB phone link is missing`);
   if (html.includes('(801) 793-6251')) errors.push(`${file}: legacy phone number must not be reused`);
   if (!html.includes('/assets/site-events.js')) errors.push(`${file}: Google Analytics loader is missing`);
+  for (const pattern of unsupportedClaimPatterns) {
+    if (pattern.test(stripTags(html))) errors.push(`${file}: unsupported claim or unverified service matched ${pattern}`);
+  }
 
   if (titles.has(title)) errors.push(`${file}: duplicate title also used by ${titles.get(title)}`);
   else titles.set(title, file);
@@ -112,6 +128,9 @@ for (const legacy of ['/privacy-policy.html', '/privacy-policy/', '/about/']) {
 const llms = read('llms.txt');
 if (!llms.includes('+1-385-314-9098')) errors.push('llms.txt is missing the canonical PRMB phone number');
 if (llms.includes('(801) 793-6251')) errors.push('llms.txt contains the legacy phone number');
+for (const pattern of unsupportedClaimPatterns) {
+  if (pattern.test(llms)) errors.push(`llms.txt: unsupported claim or unverified service matched ${pattern}`);
+}
 
 const headers = read('_headers');
 if ((headers.match(/^\/\*$/gm) ?? []).length !== 1) errors.push('_headers must contain exactly one global /* rule');

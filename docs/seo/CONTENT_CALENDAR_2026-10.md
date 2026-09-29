@@ -15,14 +15,15 @@ Generated images are editorial illustrations. Never call them a customer home, a
 
 ## Published starter asset
 
-- **September 25:** commercial-cleaning GBP update with a generated editorial image and direct link to `/services/commercial-cleaning`. Status: submitted for Google review.
+- **September 25:** commercial-cleaning GBP update with generated editorial imagery and direct link to `/services/commercial-cleaning`. Status: published.
+- **September 27:** routine-versus-deep-cleaning GBP update with generated editorial imagery and direct link to `/services/deep-cleaning`. Status: published.
 
 ## Next four weeks
 
 | Window | Website / proof task | GBP / local task | Asset and evidence needed |
 |---|---|---|---|
-| Sep 28–Oct 1 | Expand the commercial page only if Search Console exposes new queries; otherwise leave copy stable | Publish “standard vs. deep cleaning” educational update | Generated residential editorial image is ready; no job claim |
-| Oct 2–5 | Add conversion events after a GA4/GTM owner is selected | Audit YellowPages, iHeartSLC and Thumbtack field consistency | Account access; canonical data block |
+| Sep 28–Oct 1 | Expand the commercial page only if Search Console exposes new queries; otherwise leave copy stable | Verify the two published updates and the pending description | No duplicate submission while review is active |
+| Oct 2–5 | Validate the deployed GA4 events and define GBP UTM attribution | Audit YellowPages, iHeartSLC and Thumbtack field consistency | Account access; canonical data block |
 | Oct 6–9 | Draft a Utah office-cleaning scope checklist for property managers | Publish move-in/move-out preparation tips | Generated move-out editorial image is ready; no job claim |
 | Oct 10–13 | Review indexing and rewrite only pages with clear crawl/query evidence | Claim or create one Tier-1 citation, beginning with Bing or Apple | Correct owning account and private verification details |
 | Oct 14–17 | Prepare the first real case-study template; do not publish without project evidence | Ask recent completed customers for honest reviews using Google's official link | Client permission, service/city, scope, date, result and optional quote |
@@ -43,6 +44,8 @@ Routine cleaning helps maintain a space on a recurring schedule. Deep cleaning g
 **Image**
 
 `assets/seo/prmb-house-cleaning-utah-editorial-2026-09.png`
+
+**Status:** published September 27, 2026. Do not publish again.
 
 ### Move-in / move-out preparation
 
