@@ -36,3 +36,9 @@ test('unknown URLs return a real noindex 404', async ({ page }) => {
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/i);
   await expect(page.locator('a[href="tel:+13853149098"]').first()).toBeAttached();
 });
+
+test('quote form keeps explicit session-recording masking', async ({ page }) => {
+  const response = await page.goto('/', { waitUntil: 'domcontentloaded' });
+  expect(response?.status()).toBe(200);
+  await expect(page.locator('#quoteForm')).toHaveAttribute('data-clarity-mask', 'true');
+});

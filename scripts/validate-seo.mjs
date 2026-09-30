@@ -115,6 +115,11 @@ for (const token of ['G-QRXZ5P920F', 'generate_lead', 'click_to_call', 'click_to
   if (!analytics.includes(token)) errors.push(`assets/site-events.js missing ${token}`);
 }
 
+const homepage = read('index.html');
+if (!/<form[^>]+id=["']quoteForm["'][^>]+data-clarity-mask=["']true["']/i.test(homepage)) {
+  errors.push('index.html: quote form must keep explicit Microsoft Clarity masking');
+}
+
 const robots = read('robots.txt');
 for (const token of ['Sitemap: https://prmbcleaning.com/sitemap.xml', 'OAI-SearchBot', 'Claude-SearchBot', 'Googlebot']) {
   if (!robots.includes(token)) errors.push(`robots.txt missing ${token}`);

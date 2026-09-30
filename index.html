@@ -750,7 +750,7 @@
         <div data-aos="fade-left">
           <!-- form-success fica fora do <form> de propósito: esconder o form (display:none) no sucesso não pode esconder a confirmação junto -->
           <div class="form-success" id="formSuccess" role="status"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"/></svg> Thanks! Your quote request was sent.</div>
-          <form class="form-card" id="quoteForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <form class="form-card" id="quoteForm" action="https://api.web3forms.com/submit" method="POST" data-clarity-mask="true" novalidate>
             <input type="hidden" name="access_key" value="fc2ac110-a813-4118-bce3-128a1ae4805e">
             <input type="hidden" name="subject" value="New quote request from PRMB Cleaning website">
             <input type="hidden" name="from_name" value="PRMB Cleaning Website">
