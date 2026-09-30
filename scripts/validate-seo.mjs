@@ -119,6 +119,9 @@ const homepage = read('index.html');
 if (!/<form[^>]+id=["']quoteForm["'][^>]+data-clarity-mask=["']true["']/i.test(homepage)) {
   errors.push('index.html: quote form must keep explicit Microsoft Clarity masking');
 }
+if (!homepage.includes('name="ahrefs-site-verification" content="0e450402dc5fe1bdb6f904eb763f70ae4217c5337024d45d0eb11ba100a2ae49"')) {
+  errors.push('index.html: Ahrefs ownership verification tag is missing');
+}
 
 const robots = read('robots.txt');
 for (const token of ['Sitemap: https://prmbcleaning.com/sitemap.xml', 'OAI-SearchBot', 'Claude-SearchBot', 'Googlebot']) {
