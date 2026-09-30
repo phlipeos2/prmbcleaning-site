@@ -24,6 +24,7 @@ for (const route of routes) {
       `https://prmbcleaning.com${route}`
     );
     await expect(page.locator('a[href="tel:+13853149098"]').first()).toBeAttached();
+    await expect(page.locator('script[src="/assets/clarity.js"]')).toBeAttached();
     expect(await page.locator('body').innerText()).not.toContain('(801) 793-6251');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
     expect(pageErrors).toEqual([]);
@@ -35,6 +36,7 @@ test('unknown URLs return a real noindex 404', async ({ page }) => {
   expect(response?.status()).toBe(404);
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/i);
   await expect(page.locator('a[href="tel:+13853149098"]').first()).toBeAttached();
+  await expect(page.locator('script[src="/assets/clarity.js"]')).toBeAttached();
 });
 
 test('quote form keeps explicit session-recording masking', async ({ page }) => {

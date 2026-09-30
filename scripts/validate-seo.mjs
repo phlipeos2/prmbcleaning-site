@@ -41,7 +41,7 @@ const targetFileForPath = (pathname) => {
   return `${pathname.slice(1)}.html`;
 };
 
-for (const required of ['404.html', '_headers', '_redirects', 'robots.txt', 'sitemap.xml', 'llms.txt', 'assets/seo-pages.css', 'assets/site-events.js']) {
+for (const required of ['404.html', '_headers', '_redirects', 'robots.txt', 'sitemap.xml', 'llms.txt', 'assets/seo-pages.css', 'assets/site-events.js', 'assets/clarity.js']) {
   if (!existsSync(resolve(root, required))) errors.push(`Missing required file: ${required}`);
 }
 
@@ -81,6 +81,13 @@ for (const [route, file] of routeMap) {
   if (!html.includes('tel:+13853149098')) errors.push(`${file}: canonical PRMB phone link is missing`);
   if (html.includes('(801) 793-6251')) errors.push(`${file}: legacy phone number must not be reused`);
   if (!html.includes('/assets/site-events.js')) errors.push(`${file}: Google Analytics loader is missing`);
+  if (!html.includes('/assets/clarity.js')) errors.push(`${file}: Microsoft Clarity loader is missing`);
+  const mailtoCount = (html.match(/href=["']mailto:/gi) ?? []).length;
+  const emailOffCount = (html.match(/<!--email_off-->/g) ?? []).length;
+  const emailOnCount = (html.match(/<!--\/email_off-->/g) ?? []).length;
+  if (mailtoCount !== emailOffCount || mailtoCount !== emailOnCount) {
+    errors.push(`${file}: each mailto link must be protected from Cloudflare email rewriting`);
+  }
   for (const pattern of unsupportedClaimPatterns) {
     if (pattern.test(stripTags(html))) errors.push(`${file}: unsupported claim or unverified service matched ${pattern}`);
   }
@@ -109,10 +116,17 @@ const page404 = read('404.html');
 if (!/name=["']robots["'][^>]+noindex/i.test(page404)) errors.push('404.html must be noindex');
 if ((page404.match(/<h1(?:\s|>)/gi) ?? []).length !== 1) errors.push('404.html must contain exactly one H1');
 if (!page404.includes('/assets/site-events.js')) errors.push('404.html: Google Analytics loader is missing');
+if (!page404.includes('/assets/clarity.js')) errors.push('404.html: Microsoft Clarity loader is missing');
 
 const analytics = read('assets/site-events.js');
 for (const token of ['G-QRXZ5P920F', 'generate_lead', 'click_to_call', 'click_to_text', 'click_to_email']) {
   if (!analytics.includes(token)) errors.push(`assets/site-events.js missing ${token}`);
+}
+
+const clarity = read('assets/clarity.js');
+if (!clarity.includes('yqjnlg0o72')) errors.push('assets/clarity.js: PRMB Clarity project ID is missing');
+for (const forbidden of ['identify', 'prmbcleaning@gmail.com', '+13853149098']) {
+  if (clarity.includes(forbidden)) errors.push(`assets/clarity.js must not transmit customer or business identifiers (${forbidden})`);
 }
 
 const homepage = read('index.html');
