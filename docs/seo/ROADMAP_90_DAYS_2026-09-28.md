@@ -1,9 +1,14 @@
 # PRMB Cleaning — plano operacional agressivo de SEO para 90 dias
 
-Versão: 27 de setembro de 2026
+Versão original: 27 de setembro de 2026
+Revisão integrada: 30 de setembro de 2026
 Execução: 28 de setembro a 26 de dezembro de 2026
 Fuso: America/Denver
 Escopo: site `prmbcleaning.com`, Search Console, GA4, Bing, Cloudflare, GitHub e somente o Perfil da Empresa PRMB Cleaning, ID `7764775686424117208`
+
+Calendário diário oficial: `SEO_CALENDAR_DAILY_2026_Q4.md`.
+Playbook do Perfil: `GBP_OPERATING_PLAYBOOK_2026_Q4.md`.
+Auditoria GitHub adicional: `GITHUB_LOCAL_SEO_REVIEW_2026-09-30.md`.
 
 ## Resultado esperado
 
@@ -109,11 +114,11 @@ Critério de saída: primeira URL além da home com impressões; uma fonte de au
 | Data e hora | Dia | Ação principal | Saída esperada |
 |---|---:|---|---|
 | 28/out 08:30 | 31 | Benchmark competitivo por serviço/localidade e revisão de lacunas | Matriz concorrente → prova → lacuna → resposta PRMB |
-| 31/out 08:30 | 34 | Pilotar OpenSEO somente com custo/credenciais aprovados e limite definido | Relatório direcional de 10–20 consultas e grid 3×3 |
+| 31/out 08:30 | 34 | Decidir/pilotar `legends-geogrid` somente com custo/credenciais aprovados e teto definido; OpenSEO é comparação opcional | Relatório direcional de 3 temas e grid pequeno |
 | 03/nov 08:30 | 37 | Produzir case study real se houver evidência/permissão; senão guia factual | Um ativo de experiência, sem prova fabricada |
 | 06/nov 08:30 | 40 | Corrigir YellowPages/iHeartSLC/Thumbtack ou segunda fonte prioritária | NAP e landing page alinhados |
 | 09/nov 08:30 | 43 | Avaliar uma única página de cidade, aplicando o gate de demanda/capacidade | Decisão explícita criar ou não criar |
-| 11/nov 09:00 | 45 | **Auditoria 3**: prova, ranking local, fonte externa e piloto OpenSEO | Manter, alterar ou encerrar o piloto |
+| 11/nov 09:00 | 45 | **Auditoria 3**: prova, ranking local, fonte externa e piloto geo-grid | Manter, alterar ou encerrar o piloto |
 
 Critério de saída: nenhum conteúdo doorway; uma prova real ou guia útil; decisão objetiva sobre página local e ferramenta paga.
 
@@ -177,6 +182,11 @@ Critério de saída: pelo menos uma oportunidade legítima de menção/link; pá
 | Dias 31–45 | OpenSEO 0.1.9 | Piloto privado, custo limitado e versão fixada; DataForSEO é dependência paga |
 | Dias 46–60 | `llms.txt` | Validar sincronização com sitemap/fatos; manter como complemento experimental |
 | Dias 76–90 | SEOnaut/SerpBear/GBP API | Reavaliar somente se escala, custo e economia operacional justificarem |
+| Agora | `localseoskills` | Incorporar somente métodos selecionados no playbook PRMB; não instalar 39 skills nem aceitar claims não oficiais |
+| Dias 0–30 | Review QR | Criar ativo original PRMB, sem reutilizar repo sem licença detectada e sem incentivo/gating |
+| Dias 31–45 | `legends-geogrid` | Piloto padrão de geo-grid com estimate-first, versão fixada e teto aprovado |
+| Dias 31–45 | OpenSEO | Comparação opcional, não piloto padrão; depende de DataForSEO e deve provar valor incremental |
+| Dias 76–90 | GBP Autopilot/API | Reavaliar dry-run/facts-only; nenhum OAuth ou escrita enquanto escopo/ROI não justificarem |
 
 Preferred Sources não é prioridade: o recurso é orientado a publishers/notícias e não substitui SEO local. Não usar clientes não oficiais de GBP, proxies de scraping de Google, link farms, criação automática de reviews ou geradores de páginas locais em massa.
 

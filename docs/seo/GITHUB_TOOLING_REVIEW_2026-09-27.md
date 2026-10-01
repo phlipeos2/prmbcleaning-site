@@ -5,10 +5,12 @@ Princípio: ferramenta reduz risco ou aumenta informação; não cria ranking so
 
 ## Decisão executiva
 
+> Atualização de 30/09/2026: a auditoria dos seis links enviados pelo proprietário e dos candidatos derivados está em `GITHUB_LOCAL_SEO_REVIEW_2026-09-30.md`. Esse adendo prevalece quando houver conflito.
+
 - **Manter agora:** Lighthouse, Playwright, GitHub Actions, `ripgrep` e GitHub CLI.
 - **Adicionar no ciclo 0–15:** Lychee para links externos, Nu Html Checker para validade HTML e relatório informativo de Lighthouse Agentic Browsing.
 - **Preparar agora e ativar com confirmação:** Bing Webmaster Tools + IndexNow.
-- **Pilotar nos dias 31–45:** OpenSEO, privado, versão fixada, crédito limitado e sem expor modo sem autenticação.
+- **Pilotar nos dias 31–45:** `legends-geogrid`, privado, versão fixada, 3 temas, grid pequeno e teto de custo; OpenSEO fica como comparação opcional.
 - **Reavaliar depois:** SEOnaut, SerpBear e GBP API oficial.
 - **Não priorizar:** Google Preferred Sources, containerização do site, wrappers aleatórios de IndexNow, clientes não oficiais de GBP e ferramentas de backlinks/reviews automáticos.
 
@@ -28,6 +30,13 @@ Princípio: ferramenta reduz risco ou aumenta informação; não cria ranking so
 | [SEOnaut](https://github.com/StJudeWasHere/seonaut) | MIT, self-hosted | Monitoramento/crawler independente | Go, MySQL e Docker para apenas oito URLs | Não agora; reavaliar com 50–100 URLs |
 | [SerpBear](https://github.com/towfiqi/serpbear) | MIT; 3.1.0 observado | Rank tracking self-hosted | APIs/proxies, manutenção e sobreposição com OpenSEO | Usar apenas se OpenSEO for rejeitado |
 | [Schema.org](https://github.com/schemaorg/schemaorg) | Fonte oficial ativa | Vocabulário para entidade e serviços | Instalar repo não traz benefício | Usar vocabulário/validadores; reforçar semântica e fatos |
+| [Local SEO Skills](https://github.com/garrettjsmith/localseoskills) | MIT, ativo, 106 estrelas; 39 skills | Bons checklists de GBP, reviews, citações, links, Bing, Apple e IA local | Adoção individual modesta; várias afirmações de ranking não são oficiais; sobreposição com o sistema PRMB | Adotar somente métodos selecionados e reescritos no playbook PRMB; não instalar em bloco |
+| [Legends GeoGrid](https://github.com/avalonreset/legends-geogrid) | MIT, ativo, v0.1.0 observada | Geo-grid orientado a evidência, estimativa e teto de custo | DataForSEO pago, Python/pnpm e interpretação manual | Piloto D31–45; manter somente se mudar decisão |
+| [GBP Autopilot](https://github.com/tanzeeldevAi/google-business-profile-ai-automation) | MIT, ativo, dry-run e centenas de testes declarados | Auditoria, facts-only, monitor de mudança e drafts | Aprovação Google API, OAuth, escrita pública e risco de perfil errado | Adotar padrões; reavaliar automação D76–90; não conectar agora |
+| [Local Falcon MCP](https://github.com/local-falcon/mcp) | MIT, fornecedor ativo, MCP com OAuth | Geo-grid/IA/reviews/campanhas | Créditos, dezenas de ferramentas e escrita no GBP; permissão excessiva | Não conectar; possível comparação manual futura |
+| [ReviewQR Pro](https://github.com/iamaanahmad/ReviewQR-Pro) | Ativo, mas sem LICENSE detectada na árvore revisada | Reduz fricção para pedido de avaliação | App/dependências excessivos e licença inconsistente | Criar ativo original PRMB; não copiar código |
+| [Google Maps SERP](https://github.com/danishfareed/Google-Maps-SERP) | Ativo, Electron/Playwright | Geo-grid local e histórico | Scraping/proxies, app não assinado, orientação para contornar SmartScreen e licença inconsistente | Rejeitado |
+| [SEO Command Center](https://github.com/testedmedia/seo-command-center) | MIT, ativo, self-hosted/DataForSEO | Rank, gaps, AI e grids com custo controlado | Duplica stack e exige credenciais/infra | Reavaliar depois do D45 se houver escala e ROI |
 
 ## O OpenSEO serve?
 
@@ -68,10 +77,13 @@ Gate do piloto:
 
 - **D0–15:** manter gates; revisar e pinçar Lychee/Nu; Agentic Browsing informativo; auditar crawlers; preparar IndexNow.
 - **D16–30:** verificar Bing, enviar sitemap e ativar IndexNow com confirmação; registrar baseline.
-- **D31–45:** piloto OpenSEO limitado; comparar com GSC/GBP/GA4.
+- **D31–45:** piloto `legends-geogrid` limitado; OpenSEO somente como comparação opcional; comparar com GSC/GBP/GA4.
 - **D46–60:** rank tracking semanal de 20–50 termos somente se o piloto provar valor.
 - **D61–75:** usar dados para citações, links e melhorias; nenhuma automação de outreach.
 - **D76–90:** manter, trocar ou remover ferramentas com base no ROI; reavaliar GBP API oficial.
+
+Calendário diário: `SEO_CALENDAR_DAILY_2026_Q4.md`.
+Playbook do Perfil: `GBP_OPERATING_PLAYBOOK_2026_Q4.md`.
 
 ## Fontes primárias
 
