@@ -75,7 +75,7 @@ Para o Perfil até o Dia 90: 200–280 visualizações no período e 6–12 cliq
 
 ## Cadência fixa
 
-- **08:30 a cada três dias:** coleta de dados, próxima ação segura, validação e documentação.
+- **08:30 diariamente:** reconciliar o calendário com o ledger, recuperar pendências e executar a próxima ação segura; tarefas pesadas permanecem espaçadas no ciclo de três dias.
 - **09:00 nos dias 15, 30, 45, 60, 75 e 90:** auditoria crítica, comparação com baseline, diagnóstico de causa e reordenação do backlog.
 - **A cada 7–10 dias:** um post útil do Perfil, preparado em lote e publicado somente após confirmação no momento da ação.
 - **Semanal:** uma melhoria substancial em conteúdo, autoridade, medição ou experiência; nunca publicar apenas para cumprir volume.
