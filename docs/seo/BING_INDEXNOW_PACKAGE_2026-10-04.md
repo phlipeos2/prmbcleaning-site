@@ -1,9 +1,18 @@
 # PRMB Cleaning — pacote Bing Webmaster Tools + IndexNow
 
 Data de preparação: 4 de outubro de 2026
-Estado: `KEY_READY_FOR_DEPLOY`
+Estado: `SUBMITTED_202_ACCEPTED`
 Escopo: `prmbcleaning.com` e as 8 URLs canônicas do sitemap
-Submissão externa executada: **não**
+Submissão externa executada: **sim, uma vez em 04/10/2026**
+
+## Resultado de ativação
+
+- Push de produção: `de3771e..2c02b6e` para `main`.
+- GitHub Actions: execução `37248510208` aprovada em 2m21s.
+- Produção: arquivo raiz da chave 200 e conteúdo exato; sitemap 200 com 8 URLs.
+- IndexNow: lote único com 8 URLs recebeu HTTP `202 Accepted`.
+- Interpretação: recebimento aceito com validação da chave pendente; não garante rastreamento ou indexação.
+- Próxima checagem: observar Bing/IndexNow em 24–48 horas; não reenviar em loop.
 
 ## Decisão
 
