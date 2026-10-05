@@ -112,11 +112,13 @@ The owner explicitly decided to preserve every legacy post, including the two re
 
 ### Post 4 — Preparing for an estimate
 
-**Image:** a future neutral editorial still life showing a checklist and cleaning supplies; no people, brand logos, readable text or customer-property claim.
+**Image:** `assets/seo/gbp-quote-scope-editorial-2026-10-03.png`; neutral editorial still life showing a blank checklist and cleaning supplies, with no people, brand logos, readable text or customer-property claim.
 
 **Copy:** A useful cleaning estimate starts with a clear picture of the space. Share the property type, approximate size, current condition, priority areas, location, deadline, and whether you need recurring or one-time service. PRMB Cleaning will use those details to define the scope before scheduling.
 
-**Link:** `https://prmbcleaning.com/services/`
+**Link:** `https://prmbcleaning.com/services/?utm_source=google&utm_medium=organic&utm_campaign=gbp_posts&utm_content=2026-10-03_preparing-estimate`
+
+**Status:** draft prepared on October 3; waiting for action-time confirmation before publication.
 
 ## Image checklist
 

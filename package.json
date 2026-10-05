@@ -8,7 +8,9 @@
     "validate": "node scripts/validate-seo.mjs",
     "audit": "node scripts/run-lighthouse.mjs",
     "test:e2e": "playwright test",
-    "test": "npm run validate && npm run audit && npm run test:e2e"
+    "test": "npm run validate && npm run audit && npm run test:e2e",
+    "indexnow:prepare": "node scripts/indexnow.mjs --dry-run",
+    "indexnow:submit": "node scripts/indexnow.mjs --submit"
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",

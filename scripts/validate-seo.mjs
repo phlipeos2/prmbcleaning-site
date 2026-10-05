@@ -34,6 +34,8 @@ const unsupportedClaimPatterns = [
   /post-event cleaning/i,
   /garage cleaning/i
 ];
+unsupportedClaimPatterns.push(/free (?:quote|estimate)/i);
+const unverifiedAreaPatterns = [/\bLehi\b/i, /\bSandy\b/i, /\bDraper\b/i];
 const targetFileForPath = (pathname) => {
   if (routeMap.has(pathname)) return routeMap.get(pathname);
   if (/\.[a-z0-9]+$/i.test(pathname)) return pathname.slice(1);
@@ -90,6 +92,9 @@ for (const [route, file] of routeMap) {
   }
   for (const pattern of unsupportedClaimPatterns) {
     if (pattern.test(stripTags(html))) errors.push(`${file}: unsupported claim or unverified service matched ${pattern}`);
+  }
+  for (const pattern of unverifiedAreaPatterns) {
+    if (pattern.test(stripTags(html))) errors.push(`${file}: unverified service-area city matched ${pattern}`);
   }
 
   if (titles.has(title)) errors.push(`${file}: duplicate title also used by ${titles.get(title)}`);
@@ -152,6 +157,9 @@ if (!llms.includes('+1-385-314-9098')) errors.push('llms.txt is missing the cano
 if (llms.includes('(801) 793-6251')) errors.push('llms.txt contains the legacy phone number');
 for (const pattern of unsupportedClaimPatterns) {
   if (pattern.test(llms)) errors.push(`llms.txt: unsupported claim or unverified service matched ${pattern}`);
+}
+for (const pattern of unverifiedAreaPatterns) {
+  if (pattern.test(llms)) errors.push(`llms.txt: unverified service-area city matched ${pattern}`);
 }
 
 const headers = read('_headers');
