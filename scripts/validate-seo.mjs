@@ -130,6 +130,9 @@ for (const token of ['G-QRXZ5P920F', 'generate_lead', 'click_to_call', 'click_to
 
 const clarity = read('assets/clarity.js');
 if (!clarity.includes('yqjnlg0o72')) errors.push('assets/clarity.js: PRMB Clarity project ID is missing');
+for (const localHost of ['localhost', '127.0.0.1', '[::1]']) {
+  if (!clarity.includes(localHost)) errors.push(`assets/clarity.js: local Clarity exclusion is missing ${localHost}`);
+}
 for (const forbidden of ['identify', 'prmbcleaning@gmail.com', '+13853149098']) {
   if (clarity.includes(forbidden)) errors.push(`assets/clarity.js must not transmit customer or business identifiers (${forbidden})`);
 }

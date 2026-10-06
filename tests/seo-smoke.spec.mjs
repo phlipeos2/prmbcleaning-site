@@ -44,3 +44,15 @@ test('quote form keeps explicit session-recording masking', async ({ page }) => 
   expect(response?.status()).toBe(200);
   await expect(page.locator('#quoteForm')).toHaveAttribute('data-clarity-mask', 'true');
 });
+
+test('local QA traffic does not initialize the production Clarity project', async ({ page }) => {
+  const clarityRequests = [];
+  page.on('request', (request) => {
+    if (/clarity\.(?:ms|microsoft)/i.test(request.url())) clarityRequests.push(request.url());
+  });
+
+  const response = await page.goto('/', { waitUntil: 'networkidle' });
+  expect(response?.status()).toBe(200);
+  expect(await page.evaluate(() => typeof window.clarity)).toBe('undefined');
+  expect(clarityRequests).toEqual([]);
+});
