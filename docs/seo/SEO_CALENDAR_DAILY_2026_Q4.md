@@ -29,20 +29,20 @@ A execução pesada continua no ciclo de três dias. As linhas intermediárias s
 | 09/10, sex | 08:30 | AUTO | Benchmark público de três concorrentes por categoria, reviews, páginas e prova | Matriz competitiva inicial |
 | 10/10, sáb | 08:30 | AUTO | CI completo, produção, redirects, schema, headers e crawlers oficiais | Relatório técnico |
 | 11/10, dom | 08:30 | AUTO | Congelar dados para a Auditoria 1; revisar descrição pendente do Perfil | Pacote de evidências |
-| 12/10, seg | 09:00 | AUTO | **Auditoria 1 — Dia 15:** indexação, Perfil, claims, Clarity, Ahrefs e Bing | Backlog reordenado; gate 6/8 URLs |
-| 13/10, ter | 10:00 | CONF | Ativar Bing/sitemap/IndexNow somente com pacote e confirmação exatos | Recebimento registrado; sem promessa de indexação |
-| 14/10, qua | 08:30 | AUTO | Validar Bing/IndexNow e possíveis erros; não reenviar em loop | Diagnóstico de recebimento |
-| 15/10, qui | 08:30 | AUTO | Criar ativo original de review QR para logo/telefone/link oficial | PNG/PDF prontos para validação |
-| 16/10, sex | 10:00 | CONF | Aplicar UTM no link do Perfil e futuros posts, se aprovado | Atribuição GBP separada no GA4 |
-| 17/10, sáb | 08:30 | AUTO | Revisar Clarity por página de entrada; selecionar uma fricção provável | Hipótese CRO, sem redesign |
+| 12/10, seg | 09:00 | AUTO | Fechar **Auditoria 1 — Dia 15** com uma única retentativa autenticada de GSC/GA4/Clarity/GBP/Bing | Gaps fechados ou `BLOCKED_TOOLING`; gate 6/8 aplicado sem presumir números |
+| 13/10, ter | 10:00 | CONF | Confirmar lote único de deploy: guard Clarity, snippet, QR e correção factual do CTA | CI/smoke após push; sem force-push ou segunda variável |
+| 14/10, qua | 08:30 | AUTO | Validar deploy, Bing e recebimento existente; não reenviar IndexNow | Diagnóstico de produção/cobertura |
+| 15/10, qui | 08:30 | DONO | Escanear o QR original em dois dispositivos; gerar PDF somente após validação | Destino PRMB confirmado antes de distribuição |
+| 16/10, sex | 08:30 | AUTO | Verificar no GA4 a atribuição da UTM canônica já ativa no link do Perfil e nos posts | Baseline `gbp`/`gbp_posts`; nenhuma edição duplicada |
+| 17/10, sáb | 08:30 | AUTO | Revisar Clarity apenas com sessões públicas pós-guard | Baseline humano ou “dados insuficientes”, sem redesign |
 | 18/10, dom | 08:30 | OBS | Monitorar reviews, post, descrição e indexação; aguardar latência | Estado registrado |
-| 19/10, seg | 08:30 | AUTO | Produzir checklist comercial citável somente se a URL-alvo estiver indexada | Draft factual ou pausa documentada |
-| 20/10, ter | 10:00 | CONF | Publicar/atualizar lote GBP útil com landing page e UTM, se aprovado | Post e status registrados |
+| 19/10, seg | 08:30 | AUTO | Produzir checklist comercial citável somente se a URL comercial estiver confirmada como indexada | Draft factual ou pausa documentada |
+| 20/10, ter | 08:30 | OBS | Medir os posts públicos de 03/10 e 11/10; preparar próximo tema somente se houver utilidade e capacidade | Desempenho registrado; nenhum post compensatório |
 | 21/10, qua | 08:30 | AUTO | Verificar concorrentes em duas consultas/localidades sem scraping em massa | Snapshot comparável |
-| 22/10, qui | 10:00 | CONF | Reivindicar/corrigir Bing Places ou outra citação Tier 1 | Citação em andamento |
+| 22/10, qui | 10:00 | CONF | Importar/reivindicar Bing Places ou outra citação Tier 1 | Citação em andamento; nenhuma nova submissão IndexNow em loop |
 | 23/10, sex | 08:30 | AUTO | Validar NAP/categoria/landing page da citação iniciada | Checklist de consistência |
 | 24/10, sáb | 08:30 | AUTO | Revisar fluxo de pedido de review e preparar mensagem neutra | SOP pronto; nenhum envio em massa |
-| 25/10, dom | 08:30 | AUTO | Fortalecer uma URL com consulta real, FAQ útil e link interno | Uma melhoria baseada em dados |
+| 25/10, dom | 08:30 | AUTO | Fortalecer uma URL somente com consulta real, FAQ útil e link interno | Uma melhoria baseada em dados ou pausa explícita |
 | 26/10, seg | 08:30 | AUTO | Congelar dados para Auditoria 2; comparar GSC/GA4/GBP/Clarity | Pacote de evidências |
 | 27/10, ter | 09:00 | AUTO | **Auditoria 2 — Dia 30:** query→URL, CTR, Bing, Perfil, conversão e citação | Sprint 3 replanejado |
 | 28/10, qua | 08:30 | AUTO | Benchmark profundo por serviço/localidade | Lacunas de prova e conversão |

@@ -25,6 +25,7 @@ const unsupportedClaimPatterns = [
   /licensed\s*(?:&|and)\s*insured/i,
   /eco[- ]friendly/i,
   /satisfaction guaranteed/i,
+  /5\.0★,? every time/i,
   /no extra charge/i,
   /within 24 hours/i,
   /immediate assistance/i,

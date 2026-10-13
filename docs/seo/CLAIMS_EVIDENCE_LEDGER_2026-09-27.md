@@ -19,6 +19,14 @@ Regra: uma afirmação pública é ampliada somente quando houver evidência pri
 | 5,0 de 9 reviews | Homepage/schema | Confirmado em 27/09/2026 | Usar com data de corte ou revisar mensalmente; evitar `no exceptions/no filtering` |
 | Free estimate | Site/GBP | Prática publicada, mas política interna não anexada | Manter somente se o proprietário confirmar que toda estimativa é gratuita |
 
+## Estado de tratamento no checkpoint D15 — 11/10/2026
+
+- Os claims P0 de licença/seguro, produtos ecológicos, garantia, resposta rápida, setores sensíveis, serviços não confirmados, “all Utah” e orçamento gratuito foram removidos ou neutralizados nas páginas publicáveis durante o lote de 28/09 e permanecem bloqueados pelo validador.
+- A auditoria D15 encontrou a frase ambígua `5.0★, every time` no CTA final. Ela poderia ser lida como promessa de resultado/nota futura, não apenas como histórico.
+- A frase foi substituída localmente por `Request availability for your home or business in our listed Utah service areas.` e o padrão antigo entrou no bloqueio automatizado.
+- Esta correção não altera layout/design e ainda não foi publicada; segue o gate de confirmação do próximo deploy.
+- As linhas históricas acima continuam como ledger de evidência: nenhuma alegação volta a ser usada sem a evidência mínima definida.
+
 ## Evidência mínima aceita
 
 - licença/seguro: documento vigente, emissor, número e validade guardados privadamente;

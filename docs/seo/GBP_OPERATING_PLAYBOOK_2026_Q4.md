@@ -44,8 +44,8 @@ Transformar o Perfil da Empresa em um motor de descoberta e conversão conectado
 4. Usar UTM padrão:
    - `utm_source=google`
    - `utm_medium=organic`
-   - `utm_campaign=gbp_post`
-   - `utm_content=AAAA-MM-DD_tema-curto`
+   - `utm_campaign=gbp_posts`
+   - `utm_content=YYYY-MM-DD_slug-curto`
 5. Criar imagem editorial sem aparência enganosa de trabalho real.
 6. Validar a política do Google, inclusive ausência de telefone no texto.
 7. Apresentar lote exato e obter confirmação imediatamente antes da publicação.
